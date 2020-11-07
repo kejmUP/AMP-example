@@ -1,42 +1,42 @@
 {
     "items": [
         {
-            "imageUrl": "../images/sea.jpg",
+            "imageUrl": "https://i.picsum.photos/id/385/344/192.jpg?hmac=nUVUEjgFrSuFAOl16tQ1sZPPn3PboZcQpnEvmBmnAdE",
             "title": "Red sea",
             "subtitle": "Wonderful holiday in Egypt"
         },
         {
-            "imageUrl": "../images/amazon.jpg",
+            "imageUrl": "https://i.picsum.photos/id/921/344/192.jpg?hmac=emhIcYr7d44PM-F6z1TX1I-OKUVCLmRLF4hgZlI3Asg",
             "title": "Amazon jungle",
             "subtitle": "The largest jungle on Earth"
         },
         {
-            "imageUrl": "../images/sea.jpg",
+            "imageUrl": "https://i.picsum.photos/id/385/344/192.jpg?hmac=nUVUEjgFrSuFAOl16tQ1sZPPn3PboZcQpnEvmBmnAdE",
             "title": "Red sea",
             "subtitle": "Wonderful holiday in Egypt"
         },
         {
-            "imageUrl": "../images/amazon.jpg",
+            "imageUrl": "https://i.picsum.photos/id/921/344/192.jpg?hmac=emhIcYr7d44PM-F6z1TX1I-OKUVCLmRLF4hgZlI3Asg",
             "title": "Amazon jungle",
             "subtitle": "The largest jungle on Earth"
         },
         {
-            "imageUrl": "../images/sea.jpg",
+            "imageUrl": "https://i.picsum.photos/id/385/344/192.jpg?hmac=nUVUEjgFrSuFAOl16tQ1sZPPn3PboZcQpnEvmBmnAdE",
             "title": "Red sea",
             "subtitle": "Wonderful holiday in Egypt"
         },
         {
-            "imageUrl": "../images/amazon.jpg",
+            "imageUrl": "https://i.picsum.photos/id/921/344/192.jpg?hmac=emhIcYr7d44PM-F6z1TX1I-OKUVCLmRLF4hgZlI3Asg",
             "title": "Amazon jungle",
             "subtitle": "The largest jungle on Earth"
         },
         {
-            "imageUrl": "../images/sea.jpg",
+            "imageUrl": "https://i.picsum.photos/id/385/344/192.jpg?hmac=nUVUEjgFrSuFAOl16tQ1sZPPn3PboZcQpnEvmBmnAdE",
             "title": "Red sea",
             "subtitle": "Wonderful holiday in Egypt"
         },
         {
-            "imageUrl": "../images/amazon.jpg",
+            "imageUrl": "https://i.picsum.photos/id/921/344/192.jpg?hmac=emhIcYr7d44PM-F6z1TX1I-OKUVCLmRLF4hgZlI3Asg",
             "title": "Amazon jungle",
             "subtitle": "The largest jungle on Earth"
         }
