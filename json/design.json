@@ -1,0 +1,44 @@
+{
+    "items": [
+        {
+            "imageUrl": "../images/car.jpg",
+            "title": "Old cars",
+            "subtitle": "Feel the smell of 80s"
+        },
+        {
+            "imageUrl": "../images/skate.jpg",
+            "title": "Skateboards in interiors",
+            "subtitle": "Designed for fun"
+        },
+        {
+            "imageUrl": "../images/car.jpg",
+            "title": "Old cars",
+            "subtitle": "Feel the smell of 80s"
+        },
+        {
+            "imageUrl": "../images/skate.jpg",
+            "title": "Skateboards in interiors",
+            "subtitle": "Designed for fun"
+        },
+        {
+            "imageUrl": "../images/car.jpg",
+            "title": "Old cars",
+            "subtitle": "Feel the smell of 80s"
+        },
+        {
+            "imageUrl": "../images/skate.jpg",
+            "title": "Skateboards in interiors",
+            "subtitle": "Designed for fun"
+        },
+        {
+            "imageUrl": "../images/car.jpg",
+            "title": "Old cars",
+            "subtitle": "Feel the smell of 80s"
+        },
+        {
+            "imageUrl": "../images/skate.jpg",
+            "title": "Skateboards in interiors",
+            "subtitle": "Designed for fun"
+        }
+    ]
+}

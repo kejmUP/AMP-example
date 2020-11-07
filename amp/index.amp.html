@@ -1,0 +1,210 @@
+<!doctype html>
+<html ⚡ lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
+    <meta name="description" content="This is the AMP Boilerplate.">
+    <meta name="amp-experiments-opt-in" content="container">
+    <link rel="preload" as="script" href="https://cdn.ampproject.org/v0.js">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <script async src="https://cdn.ampproject.org/v0.js"></script>
+    <script async custom-element="amp-sidebar" src="https://cdn.ampproject.org/v0/amp-sidebar-0.1.js"></script>
+    <script async custom-element="amp-accordion" src="https://cdn.ampproject.org/v0/amp-accordion-0.1.js"></script>
+    <script async custom-element="amp-bind" src="https://cdn.ampproject.org/v0/amp-bind-0.1.js"></script>
+    <script async custom-element="amp-list" src="https://cdn.ampproject.org/v0/amp-list-0.1.js"></script>
+    <script async custom-template="amp-mustache" src="https://cdn.ampproject.org/v0/amp-mustache-0.2.js"></script>
+    <style amp-custom>
+      body {
+        width: auto;
+        margin: 0;
+        padding: 0;
+        background-color: rgb(250, 250, 250);
+        scrollbar-width: none;
+      }
+
+      body::-webkit-scrollbar {
+        display: none;
+      }
+
+      .card__title {
+        font-family: 'Roboto', sans-serif;;
+        font-weight: 400;
+        font-size: 24px;
+        letter-spacing: 0px;
+      }
+
+      .top-app-bar__headline {
+        font-family: 'Roboto', sans-serif;;
+        font-weight: 500;
+        font-size: 20px;
+        letter-spacing: 0.15px;
+      }
+
+      .card__title {
+        font-family: 'Roboto', sans-serif;;
+        font-weight: 500;
+        font-size: 18px;
+        letter-spacing: 0.15px;
+      }
+
+      .sidebar__item {
+        font-family: 'Roboto', sans-serif;;
+        font-weight: 400;
+        font-size: 14px;
+        letter-spacing: 0.25px;
+      }
+
+      .card__subtitle {
+        font-family: 'Roboto', sans-serif;;
+        font-weight: 400;
+        font-size: 12px;
+        letter-spacing: 0.4px;
+      }
+
+      .top-app-bar {
+        position: fixed;
+        width: 100%;
+        z-index: 2;
+        display: flex;
+        background: rgb(98, 0, 238);
+        color: white;
+        text-align: left;
+        height: 56px;
+      }
+
+      .top-app-bar__hamburger {
+        outline: none;
+        margin: 16px;
+      }
+
+      .top-app-bar__headline {
+        margin: 16px;
+      }
+
+      .sidebar {
+        width: 256px;
+        background-color: white;
+      }
+    
+      .sidebar__items {
+        padding: 8px;
+        margin: 0;
+      }
+    
+      .sidebar__item {
+        list-style: none;
+        height: 40px;
+        margin: 4px 0;
+      }
+    
+      .sidebar__button {
+        border: none;
+        outline: none;
+        display: block;
+        height: 100%;
+        width: 100%;
+        padding: 0 8px;
+        text-align: left;
+        background-color: white;
+      }
+    
+      .close-sidebar {
+        font-size: 1.5em;
+        padding-left: 5px;
+      }
+
+      .section__headline {
+        border: none;
+      }
+
+      .section__headline-text {
+        display: none;
+      }
+
+      .section__cards-container {
+        padding: 60px 8px 4px 8px;
+      }
+
+      .card {
+        max-width: 344px;
+        height: 266px;
+        margin: 8px auto;
+        display: flex;
+        flex-direction: column;
+        background-color: white;
+        border: 1px solid rgb(224, 224, 224);
+        border-radius: 4px;
+      }
+
+      .card__content {
+        display: flex;
+        flex-direction: column;
+        padding: 0 16px;
+      }
+
+      .card__title {
+        margin-top: 16px;
+      }
+      
+      .card__subtitle {
+        margin-top: 10px;
+        color: rgb(119, 119, 119);
+      }
+
+    </style>
+    <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
+
+    <link rel="canonical" href=".">
+    <title>AMP example</title>
+  </head>
+  <body>
+    <header class="top-app-bar">
+      <div class="top-app-bar__hamburger" role="button" on="tap:sidebar.toggle" tabindex="0">
+        <amp-img src="../icons/menu-white-24dp.svg" width="24" height="24"></amp-img>
+      </div>
+      <div class="top-app-bar__headline" [text]='topAppBarHeadline'>Holidays</div>
+    </header>
+    <amp-sidebar id="sidebar" class="sidebar" layout="nodisplay" side="left">
+      <ul class="sidebar__items">
+        <li class="sidebar__item"><button class="sidebar__button" on="tap:main-accordion.expand(section='main-accordion__section-one'),AMP.setState({topAppBarHeadline: 'Holidays'}),sidebar.close">Holidays</button></li>
+        <li class="sidebar__item"><button class="sidebar__button" on="tap:main-accordion.expand(section='main-accordion__section-two'),AMP.setState({topAppBarHeadline: 'Design'}),sidebar.close">Design</button></li>
+      </ul>
+    </amp-sidebar>
+    <main>
+      <amp-accordion id="main-accordion" class="main-accordion" disable-session-states expand-single-section>
+        <section id="main-accordion__section-one" class="main-accordion__section" expanded>
+          <h2 class="section__headline"><span class="section__headline-text">Holidays</span></h2>
+          <div class="section__cards-container">
+            <amp-list width="auto" height="266" src="../json/holidays.json">
+              <template type="amp-mustache">
+                <div class="card">
+                  <amp-img class="card__image" alt="image for {{title}}" src="{{imageUrl}}" width="344" height="192"></amp-img>
+                  <div class="card__content">
+                    <span class="card__title">{{title}}</span>
+                    <span class="card__subtitle">{{subtitle}}</span>
+                  </div>
+                </div>
+              </template>
+            </amp-list>
+          </div>
+        </section>
+        <section id="main-accordion__section-two" class="main-accordion__section">
+          <h2 class="section__headline"><span class="section__headline-text">Design</span></h2>
+          <div class="section__cards-container">
+            <amp-list width="auto" height="266" src="../json/design.json">
+              <template type="amp-mustache">
+                <div class="card">
+                  <amp-img class="card__image" alt="image for {{title}}" src="{{imageUrl}}" width="344" height="192"></amp-img>
+                  <div class="card__content">
+                    <span class="card__title">{{title}}</span>
+                    <span class="card__subtitle">{{subtitle}}</span>
+                  </div>
+                </div>
+              </template>
+            </amp-list>
+          </div>
+        </section>
+      </amp-accordion>
+    </main>
+  </body>
+</html>

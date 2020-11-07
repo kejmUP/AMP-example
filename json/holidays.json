@@ -1,0 +1,44 @@
+{
+    "items": [
+        {
+            "imageUrl": "../images/sea.jpg",
+            "title": "Red sea",
+            "subtitle": "Wonderful holiday in Egypt"
+        },
+        {
+            "imageUrl": "../images/amazon.jpg",
+            "title": "Amazon jungle",
+            "subtitle": "The largest jungle on Earth"
+        },
+        {
+            "imageUrl": "../images/sea.jpg",
+            "title": "Red sea",
+            "subtitle": "Wonderful holiday in Egypt"
+        },
+        {
+            "imageUrl": "../images/amazon.jpg",
+            "title": "Amazon jungle",
+            "subtitle": "The largest jungle on Earth"
+        },
+        {
+            "imageUrl": "../images/sea.jpg",
+            "title": "Red sea",
+            "subtitle": "Wonderful holiday in Egypt"
+        },
+        {
+            "imageUrl": "../images/amazon.jpg",
+            "title": "Amazon jungle",
+            "subtitle": "The largest jungle on Earth"
+        },
+        {
+            "imageUrl": "../images/sea.jpg",
+            "title": "Red sea",
+            "subtitle": "Wonderful holiday in Egypt"
+        },
+        {
+            "imageUrl": "../images/amazon.jpg",
+            "title": "Amazon jungle",
+            "subtitle": "The largest jungle on Earth"
+        }
+    ]
+}
