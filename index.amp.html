@@ -150,7 +150,6 @@
         margin-top: 10px;
         color: rgb(119, 119, 119);
       }
-
     </style>
     <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
 
@@ -160,7 +159,7 @@
   <body>
     <header class="top-app-bar">
       <div class="top-app-bar__hamburger" role="button" on="tap:sidebar.toggle" tabindex="0">
-        <amp-img src="../icons/menu-white-24dp.svg" width="24" height="24"></amp-img>
+        <amp-img src="./icons/menu-white-24dp.svg" width="24" height="24"></amp-img>
       </div>
       <div class="top-app-bar__headline" [text]='topAppBarHeadline'>Holidays</div>
     </header>
@@ -175,7 +174,7 @@
         <section id="main-accordion__section-one" class="main-accordion__section" expanded>
           <h2 class="section__headline"><span class="section__headline-text">Holidays</span></h2>
           <div class="section__cards-container">
-            <amp-list width="auto" height="266" src="../json/holidays.json">
+            <amp-list width="auto" height="266" src="./json/holidays.json">
               <template type="amp-mustache">
                 <div class="card">
                   <amp-img class="card__image" alt="image for {{title}}" src="{{imageUrl}}" width="344" height="192"></amp-img>
@@ -191,7 +190,7 @@
         <section id="main-accordion__section-two" class="main-accordion__section">
           <h2 class="section__headline"><span class="section__headline-text">Design</span></h2>
           <div class="section__cards-container">
-            <amp-list width="auto" height="266" src="../json/design.json">
+            <amp-list width="auto" height="266" src="./json/design.json">
               <template type="amp-mustache">
                 <div class="card">
                   <amp-img class="card__image" alt="image for {{title}}" src="{{imageUrl}}" width="344" height="192"></amp-img>
